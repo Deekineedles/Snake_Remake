@@ -31,9 +31,9 @@ while game_is_on:
         scoreboard.got_food()
 #     Detect collision with wall.
     if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
-        snake.head.setposition(-280, snake.head.ycor())
-        # scoreboard.reset()
-        # snake.reset()
+#         snake.head.setposition(-280, snake.head.ycor())
+        scoreboard.reset()
+        snake.reset()
 
 
 #         Detect collision with tail
